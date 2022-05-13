@@ -1,52 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detail</title>
 </head>
+
 <body>
     <div>
         <header>
             <div>
-                <img src="assests/images/logo.png" height="200px" width="150px" alt="">
-    
-    
+                <a href="index.html"><img src="assests/images/logo.png" height="200px" width="150px" alt=""></a>
+
+
                 <a href="login.html">Login </a>
             </div>
         </header>
         <main>
             <div>
-            <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="">
-        </div>
-        <a href="payment.html">Book Now</a>
-        <div>
-            <h2>Radisson Blu Hotel</h2>
-            <p>Rating</p>
-            <p>5 Star</p>
-            <p>Amenities</p>
-            <ul>
-                <li>Room service</li>
-                <li>Restaurant</li>
-                <li>Business center</li>
-                <li>Fitness center</li>
-                <li>Pool</li>
+                <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="">
+            </div>
+            <form action="payment.html" target="_self" method="get">
 
-            </ul>
-            <h5>Description</h5>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias corrupti et sapiente iusto omnis vero delectus eum reiciendis quisquam quis, recusandae maxime doloribus laudantium, at blanditiis illum ipsum culpa nostrum laboriosam quibusdam voluptatem aliquid eaque.</p>
-        </div>
+
+                <label id="label" for="no_adults">Adults:</label>
+
+
+                <input id="input" type="number" name="adults" min="1" max="100" autocomplete="off" required><br>
+                <label for="name">Name:</label>
+                <input type="text" name="username" autocomplete="off" required /><br>
+                <label for="check_in">From Date:</label>
+
+                <input type="date" name="from_date" autocomplete="off" required /><br>
+                <label for="check_out">To Date:</label>
+                <input class="lbl" type="date" name="to_date" autocomplete="off" required /><br>
+                <label for="total_price">Total:</label>
+                <input class="lbl" type="number" name="total" value="0" disabled required /><br>
+                <button class="booknow">Book Now</button>
+            </form>
+            <div>
+                <h2>Radisson Blu Hotel</h2>
+                <p>Rating</p>
+                <p>5 Star</p>
+                <p>Amenities</p>
+                <ul>
+                    <li>Room service</li>
+                    <li>Restaurant</li>
+                    <li>Business center</li>
+                    <li>Fitness center</li>
+                    <li>Pool</li>
+
+                </ul>
+                <h5>Description</h5>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias corrupti et sapiente iusto omnis vero
+                    delectus eum reiciendis quisquam quis, recusandae maxime doloribus laudantium, at blanditiis illum
+                    ipsum
+                    culpa nostrum laboriosam quibusdam voluptatem aliquid eaque.</p>
+            </div>
         </main>
         <footer>
             <a href="contact.html">Contact Us</a>
             <div>
-                <a href="https://www.facebook.com/"><img src="assests/images/facebook.png" height="20px" width="22px" alt=""></a>
-                <a href="https://www.instagram.com/accounts/login/"><img src="assests/images/instagram.png" height="20px" width="22px"alt=""></a>
-                <a href="https://twitter.com/i/flow/login"><img src="assests/images/twitter.png" height="20px" width="22px" alt=""></a>
+                <a href="https://www.facebook.com/"><img src="assests/images/facebook.png" height="20px" width="22px"
+                        alt=""></a>
+                <a href="https://www.instagram.com/accounts/login/"><img src="assests/images/instagram.png"
+                        height="20px" width="22px" alt=""></a>
+                <a href="https://twitter.com/i/flow/login"><img src="assests/images/twitter.png" height="20px"
+                        width="22px" alt=""></a>
             </div>
             <p>&copy;2020 ROOM SEARCH PVT LTD</p>
         </footer>
     </div>
 </body>
+
 </html>

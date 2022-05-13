@@ -8,7 +8,14 @@
 </head>
 <body>
     <div>
-        <p>LOGIN</p>
+       <form action="index.html" method="get" target="_self" autocomplete="off">
+           <label for="name">Username:</label>
+           <input type="text" name="name" id="name" placeholder="Enter Username" autocomplete="off" required><br>
+
+           <label for="password">Password:</label>
+           <input type="password" name="password" id="password" placeholder="Enter Password" autocomplete="off" required><br>
+           <button>Login</button>
+       </form>
     </div>
 </body>
 </html>
