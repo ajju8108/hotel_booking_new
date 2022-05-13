@@ -1,13 +1,29 @@
 *{
-    margin: auto;
+    margin: 0;
     padding: auto;
+    /* padding: 0; */
 }
 
-.body2{
-    height: 100vh;
-    width: 100vw;
+body {
+    background-color: #e0e0e0;
 }
 
+header {
+    background-color: rosybrown;
+}
+.main-img{
+    margin: 2% 4% 0% 4%;
+}
+
+.main-form{
+    margin: 0% 4% 1% 4%;
+}
+.main-desc{
+    margin: 1% 4% 2% 4%;
+}
+footer {
+    background-color: rosybrown;
+}
 footer img{
    height: 20px;
    width: 22px;
