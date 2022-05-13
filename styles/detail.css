@@ -1,0 +1,15 @@
+*{
+    margin: auto;
+    padding: auto;
+}
+
+.body2{
+    height: 100vh;
+    width: 100vw;
+}
+
+footer img{
+   height: 20px;
+   width: 22px;
+}
+

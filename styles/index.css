@@ -1,0 +1,14 @@
+*{
+    margin: auto;
+    padding: auto;
+}
+
+   .main-images img{
+       height:150px;
+       width: 150px;
+   }
+
+   footer img{
+       height: 20px;
+       width: 22px;
+   }
