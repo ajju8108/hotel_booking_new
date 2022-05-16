@@ -53,7 +53,7 @@
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
   }
 
-*{
+  *{
     margin: 0;
     padding: 0;
     font-family: "Ubuntu", sans-serif;
@@ -63,27 +63,64 @@ body {
     background-color: #e0e0e0;
 }
 
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: rosybrown;
-    position:sticky;
+    position: sticky;
     top: 0px;
     bottom: 0px;
 }
 
+header img{
+    margin-left: 20%;
+}
 header a{
+    margin-right: 2%;
+}
+
+header a {
     text-decoration: none;
     color: black;
 }
-.main-img{
-    background-color: rgb(132,136,139);
-    width: 50%;
-    height: 20%;
-    margin: 2% auto;
+
+main{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
+.main-img img{
+    /* background-color: rgb(132,136,139); */
+    max-height: 250px;
+    max-width: 270px;
+}
+
+.main-img{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: rgb(132,136,139);
+  /* width: 50%; */
+  align-items: center;
+  margin: 3% auto;
+}
+
+.main-all-details{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: rosybrown;
+  margin: 2%;
+
+}
+.main-img-details{
+  padding-left: 20px;
+}
 .main-details{
     margin: 2%;
     
@@ -91,34 +128,47 @@ header a{
 
 .main-tarrif{
     margin: 2%;
-    border: 1px solid black;
-    border-radius: 5px;
+    
     padding: 1% 2%;
 }
 .main-pay a{
     text-decoration: none;
     color: black;
 }
+
+
 footer {
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    background-color: rosybrown;
-    position:sticky;
-    top: 0px;
-    bottom: 0px;
-}
-footer img{
-   height: 20px;
-   width: 22px;
-}
-footer a{
-    text-decoration: none;
-    color: black;
-}
-.footer-copyright{
-    /* display: flex; */
-    /* justify-content: ; */
-    font-size: 10px;
+  background-color: rosybrown;
+  position: sticky;
+  top: 0px;
+  bottom: 0px;
 }
 
+.footer-all{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.footer-social{
+  margin: 1%;
+}
+
+.footer-social img{
+  height: 20px; 
+  width: 22px;
+}
+
+.footer-contact {
+  margin-left: 2%;
+}
+
+.footer-contact a{
+  text-decoration: none;
+  color: black;
+}
+
+.footer-copyright {
+  font-size: 10px;
+}

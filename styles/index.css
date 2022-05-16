@@ -76,7 +76,13 @@ header {
     position: sticky;
     top: 0px;
     bottom: 0px;
+}
 
+header img{
+    margin-left: 1%;
+}
+header a{
+    margin-right: 2%;
 }
 
 header a {
@@ -84,6 +90,11 @@ header a {
     color: black;
 }
 
+main{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
 .main-form {
     display: flex;
     height: 380px;
@@ -104,22 +115,59 @@ header a {
     border-radius: 12px;
     /* height: 40px; */
     width: 25%;
+    outline: none;
+    
 
 }
 
 .main-images {
-    margin: 3% 15%;
+    /* margin: 3% 15%; */
+    /* height: 17vw; */
+    margin: 4%;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+   
 
 }
 
 .main-images img {
-    padding: 4%;
+    /* border-radius: 25%; */
+    height: 150px;
+    width: 150px;
     border-radius: 25%;
     height: 150px;
     width: 150px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
 
+.main-image-city{
+    position: relative;
+}
+
+.main-image-para{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    color: white;
+    /* display: none; */
+}
+
+.main-image-city:hover .main-image-para{
+    /* display: flex; */
+    text-align: center;
+    /* text-decoration: none; */
+    top: 50%;
+    left: 50%;
+    opacity: 100%;
+   
+}
+
+.main-image-city:hover{
+    filter: brightness(70%);
+    /* color: gray; */
 }
 
 .main-view_more {
@@ -134,27 +182,37 @@ header a {
 }
 
 footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     background-color: rosybrown;
     position: sticky;
     top: 0px;
     bottom: 0px;
 }
 
-footer img {
-    height: 20px;
+.footer-all{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.footer-social{
+    margin: 1%;
+}
+
+.footer-social img{
+    height: 20px; 
     width: 22px;
 }
 
-footer a {
+.footer-contact {
+    margin-left: 2%;
+}
+
+.footer-contact a{
     text-decoration: none;
     color: black;
 }
 
 .footer-copyright {
-    /* display: flex; */
-    /* justify-content: ; */
     font-size: 10px;
 }

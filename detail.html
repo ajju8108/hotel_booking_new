@@ -17,43 +17,62 @@
         </header>
 
         <main>
-            <div class="main-img">
-                <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" height="500px" width="500px" alt="">
+            <div class="main-part1">
+                <div class="main-img">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
+                         alt="">
+                </div>
+                <div class="main-form">
+                    <form action="payment.html" target="_self" method="get">
+
+                        <div class="main-form-content">
+                            <div>
+                        <label id="label" for="no_adults">Adults:</label></div>
+                        <div>
+                        <input id="input" type="number" name="adults" min="1" max="100" autocomplete="off" required/><br>
+                    </div>
+                    </div>
+                        
+                    <div class="main-form-content">
+                        <label for="name">Name:</label>
+                        <input type="text" name="username" autocomplete="off" required /><br>
+                    </div>
+
+                    <div class="main-form-content">
+                        <label for="check_in">From Date:</label>
+                        <input type="date" name="from_date" autocomplete="off" required /><br>
+                        </div>
+
+                        <div class="main-form-content">
+                        <label for="check_out">To Date:</label>
+                        <input class="lbl" type="date" name="to_date" autocomplete="off" required /><br>
+                    </div>
+
+                    <div class="main-form-content">
+                        <label for="total_price">Total:</label>
+                        <input class="lbl" type="number" name="total" value="0" disabled required /><br>
+                    </div>
+
+                    <div class="main-form-content">
+                        <button class="booknow">Book Now</button>
+                    </div>
+                    </form>
+                </div>
             </div>
-            <div class="main-form">
-            <form action="payment.html" target="_self" method="get">
-
-
-                <label id="label" for="no_adults">Adults:</label>
-
-
-                <input id="input" type="number" name="adults" min="1" max="100" autocomplete="off" required><br>
-                <label for="name">Name:</label>
-                <input type="text" name="username" autocomplete="off" required /><br>
-                <label for="check_in">From Date:</label>
-
-                <input type="date" name="from_date" autocomplete="off" required /><br>
-                <label for="check_out">To Date:</label>
-                <input class="lbl" type="date" name="to_date" autocomplete="off" required /><br>
-                <label for="total_price">Total:</label>
-                <input class="lbl" type="number" name="total" value="0" disabled required /><br>
-                <button class="booknow">Book Now</button>
-            </form>
-        </div>
 
             <div class="main-desc">
-                <h2>Radisson Blu Hotel</h2>
-                <p>Rating</p><br>
+                <h2 >Radisson Blu Hotel</h2><br>
+                <p > <b> RATING </b></p><br>
                 <p>5 Star</p><br>
-                <p>Amenities</p><br>
-                <ul> 
+                <p> <b>AMENITIES</b></p><br>
+                <ul>
                     <li>Room service</li>
                     <li>Restaurant</li>
                     <li>Business center</li>
                     <li>Fitness center</li>
                     <li>Pool</li>
                 </ul><br>
-                <h5>Description</h5><br>
+                <h5><b> DESCRIPTION</b></h5><br>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias corrupti et sapiente iusto omnis vero
                     delectus eum reiciendis quisquam quis, recusandae maxime doloribus laudantium, at blanditiis illum
                     ipsum
@@ -61,18 +80,24 @@
             </div>
         </main>
         <footer>
-            <div class="footer-contact" style="order: 1;">
-                <a href="contact.html">Contact Us</a>
+            <div class="footer-all">
+
+                <div class="footer-contact" style="order: 1;">
+                    <a href="contact.html">Contact Us</a>
+                </div>
+
+                <div class="footer-social" style="order: 3;">
+                    <a href="https://www.facebook.com/"><img src="assests/images/facebook.png" alt=""></a>
+                    <a href="https://www.instagram.com/accounts/login/"><img src="assests/images/instagram.png"
+                            alt=""></a>
+                    <a href="https://twitter.com/i/flow/login"><img src="assests/images/twitter.png" alt=""></a>
+                </div>
+
+                <div class="footer-copyright" style="order: 2;">
+                    <p>&copy;2020 ROOM SEARCH PVT LTD</p>
+                </div>
+
             </div>
-    
-            <div class="footer-social" style="order: 3;">
-                <a href="https://www.facebook.com/"><img src="assests/images/facebook.png" alt=""></a>
-                <a href="https://www.instagram.com/accounts/login/"><img src="assests/images/instagram.png" alt=""></a>
-                <a href="https://twitter.com/i/flow/login"><img src="assests/images/twitter.png" alt=""></a>
-            </div>
-    
-            <div class="footer-copyright" style="order: 2;">
-                &copy;2020 ROOM SEARCH PVT LTD</div>
         </footer>
     </div>
 </body>
