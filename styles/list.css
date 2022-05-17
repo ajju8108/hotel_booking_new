@@ -77,36 +77,50 @@ header {
 header img{
     margin-left: 20%;
 }
-header a{
-    margin-right: 2%;
-}
-
-header a {
-    text-decoration: none;
+.btn-light {
+    align-items: center;
+    margin-right: 20px;
     color: black;
+    background-color: white;
+    outline-offset: 0;
+    border: none;
 }
-
 main{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    background-color: #e0e0e0;
 }
 
-.main-view{
+.modal-body{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 2%;
+
+}
+.index_label2{
+    margin-top: 6%;
+    margin-left: 1%; 
+
+}
+.modal-footer{
     display: flex;
     justify-content: center;
 }
-.main-list_view{
-    padding: 1%;
-}
-.main-map_view{
-    padding: 1%;
-}
-.main-view a{
-    text-decoration: none;
-    color: black;
+
+.modal-footer2{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0% 2% 2%;
+    /* align-items: center; */
 }
 
+#pills-tab {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
 .main-images{
     display: flex;
     justify-content: center;
@@ -121,6 +135,8 @@ main{
     justify-content: space-between;
     margin: 0% 2% 2% 2%;
 }
+
+
 .main-images-part2{
     
     display: flex;
@@ -148,10 +164,23 @@ main{
     flex-direction: column;
     justify-content: center;
     /* justify-content: space-around; */
-    padding-right: 27%;
+    padding-right: 10%;
     padding-bottom: 5%;
     
 }
+.main-images-image1:hover{
+    background-color: rosybrown;
+      
+  }
+
+.main-images-image3:hover{
+    background-color: rosybrown;
+      
+  }
+  .main-images-image2:hover{
+    background-color: rosybrown;
+      
+  }
 
 
 .main-images-image2 div{
@@ -159,8 +188,8 @@ main{
     flex-direction: column;
     justify-content: center;
     /* justify-content: space-around; */
-    padding-right: 27%;
-    padding-bottom: 5%;
+    padding-right: 10%;
+    /* padding-bottom: 5%; */
     
 }
 
@@ -169,15 +198,10 @@ main{
     flex-direction: column;
     justify-content: center;
     /* justify-content: space-around; */
-    padding-right: 40%;
-    padding-bottom: 5%;
+    padding-right: 30%;
+    /* padding-bottom: 5%; */
     
 }
-
-
-
-
-
 
 .main-images-image1 a{
     text-decoration: none;
@@ -207,7 +231,9 @@ footer {
     width: 22px;
 }
 
-.footer-contact {
+.btn-info {
+    text-decoration: none;
+    color: black;
     margin-left: 2%;
 }
 

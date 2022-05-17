@@ -83,14 +83,13 @@ header {
 header img {
     margin-left: 20%;
 }
-
-header a {
-    margin-right: 2%;
-}
-
-header a {
-    text-decoration: none;
+.btn-light {
+    align-items: center;
+    margin-right: 20px;
     color: black;
+    background-color: white;
+    outline-offset: 0;
+    border: none;
 }
 
 main{
@@ -98,6 +97,31 @@ main{
     justify-content: space-between;
     flex-direction: column;
 }
+
+.modal-body{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 2%;
+  
+  }
+  .index_label2{
+    margin-top: 6%;
+    margin-left: 1%; 
+  
+  }
+  .modal-footer{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .modal-footer2{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0% 2% 2%;
+    /* align-items: center; */
+  }
+  
 
 .main-part1 {
     display: flex;
@@ -121,16 +145,28 @@ main{
 .main-form {
     display: flex;
     align-items: center;
+    justify-content: center;
     border-left: 2px solid black;
 }
 
 .main-form-content {
     display: flex;
     align-items: center;
-    margin: 15%;
+    margin: 10%;
 
 }
+.main-form-content button{
+    background-color: transparent;
+    color: green;
+    border: 1px solid green;
+    text-align: center;
 
+}
+.main-form-content button:hover{
+    background-color: green;
+    color: white;
+
+}
 
 
 .main-desc {
@@ -160,7 +196,9 @@ footer {
     width: 22px;
 }
 
-.footer-contact {
+.btn-info {
+    text-decoration: none;
+    color: black;
     margin-left: 2%;
 }
 

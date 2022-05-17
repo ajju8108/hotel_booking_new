@@ -78,22 +78,54 @@ header {
     bottom: 0px;
 }
 
-header img{
+header img {
     margin-left: 1%;
 }
-header a{
+
+/* header a{
     margin-right: 2%;
 }
 
 header a {
     text-decoration: none;
     color: black;
+} */
+.btn-light {
+    align-items: center;
+    margin-right: 20px;
+    color: black;
+    background-color: white;
+    outline-offset: 0;
+    border: none;
 }
 
-main{
+main {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+}
+.modal-body{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 2%;
+
+}
+.index_label2{
+    margin-top: 6%;
+    margin-left: 1%; 
+
+}
+.modal-footer{
+    display: flex;
+    justify-content: center;
+}
+
+.modal-footer2{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0% 2% 2%;
+    /* align-items: center; */
 }
 .main-form {
     display: flex;
@@ -116,7 +148,7 @@ main{
     /* height: 40px; */
     width: 25%;
     outline: none;
-    
+
 
 }
 
@@ -127,7 +159,7 @@ main{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-   
+
 
 }
 
@@ -139,40 +171,46 @@ main{
     height: 150px;
     width: 150px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    color: white;
 }
 
-.main-image-city{
+.main-image-city {
     position: relative;
 }
 
-.main-image-para{
+.main-image-para {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
     color: white;
-    /* display: none; */
+    display: none;
 }
 
-.main-image-city:hover .main-image-para{
+.main-image-city:hover .main-image-para {
     /* display: flex; */
+    display: block;
     text-align: center;
     /* text-decoration: none; */
     top: 50%;
     left: 50%;
     opacity: 100%;
-   
+
 }
 
-.main-image-city:hover{
+.main-image-city:hover {
     filter: brightness(70%);
     /* color: gray; */
 }
 
 .main-view_more {
-    text-align: center;
-    /* margin-bottom: 100px; */
+    display: flex;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+
 
 }
 
@@ -188,19 +226,19 @@ footer {
     bottom: 0px;
 }
 
-.footer-all{
+.footer-all {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
 }
 
-.footer-social{
+.footer-social {
     margin: 1%;
 }
 
-.footer-social img{
-    height: 20px; 
+.footer-social img {
+    height: 20px;
     width: 22px;
 }
 
@@ -208,7 +246,16 @@ footer {
     margin-left: 2%;
 }
 
-.footer-contact a{
+
+
+.btn-info {
+    text-decoration: none;
+    color: black;
+    margin-left: 2%;
+}
+
+
+.footer-contact a {
     text-decoration: none;
     color: black;
 }
