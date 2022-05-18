@@ -160,14 +160,20 @@ main{
 }
 
 .main-images-image1 div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* justify-content: space-around; */
+ 
+    padding-right: 10%;   
+}
+
+.main-images-image2 div{
+ 
     padding-right: 10%;
-    padding-bottom: 5%;
     
 }
+.main-images-image3 div{
+   
+    padding-right: 30%; 
+}
+
 .main-images-image1:hover{
     background-color: rosybrown;
       
@@ -181,28 +187,14 @@ main{
     background-color: rosybrown;
       
   }
-
-
-.main-images-image2 div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* justify-content: space-around; */
-    padding-right: 10%;
-    /* padding-bottom: 5%; */
-    
+  
+.checked {
+  color: orange;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
-.main-images-image3 div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* justify-content: space-around; */
-    padding-right: 30%;
-    /* padding-bottom: 5%; */
-    
-}
-
 .main-images-image1 a{
     text-decoration: none;
     color:black ;

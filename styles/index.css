@@ -61,11 +61,15 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: "Ubuntu", sans-serif;
 }
 
 body {
+    height: auto;
     background-color: #e0e0e0;
+    /* height: 100vh; */
+    /* min-height: calc(100vh -60px - 44.48px) ; */
 }
 
 header {
@@ -82,14 +86,6 @@ header img {
     margin-left: 1%;
 }
 
-/* header a{
-    margin-right: 2%;
-}
-
-header a {
-    text-decoration: none;
-    color: black;
-} */
 .btn-light {
     align-items: center;
     margin-right: 20px;
@@ -104,29 +100,30 @@ main {
     justify-content: space-between;
     flex-direction: column;
 }
-.modal-body{
+
+.modal-body {
     display: flex;
     justify-content: center;
-    /* align-items: center; */
     padding: 2%;
-
 }
-.index_label2{
+
+.index_label2 {
     margin-top: 6%;
-    margin-left: 1%; 
+    margin-left: 1%;
 
 }
-.modal-footer{
+
+.modal-footer {
     display: flex;
     justify-content: center;
 }
 
-.modal-footer2{
+.modal-footer2 {
     display: flex;
     justify-content: flex-end;
     margin: 0% 2% 2%;
-    /* align-items: center; */
 }
+
 .main-form {
     display: flex;
     height: 380px;
@@ -136,7 +133,6 @@ main {
     background-image: url("https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg");
     justify-content: space-around;
     align-items: center;
-
 }
 
 .main-form input {
@@ -145,26 +141,18 @@ main {
     padding: 10px;
     font-size: 16px;
     border-radius: 12px;
-    /* height: 40px; */
     width: 25%;
     outline: none;
-
-
 }
 
 .main-images {
-    /* margin: 3% 15%; */
-    /* height: 17vw; */
     margin: 4%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-
-
 }
 
 .main-images img {
-    /* border-radius: 25%; */
     height: 150px;
     width: 150px;
     border-radius: 25%;
@@ -189,10 +177,8 @@ main {
 }
 
 .main-image-city:hover .main-image-para {
-    /* display: flex; */
     display: block;
     text-align: center;
-    /* text-decoration: none; */
     top: 50%;
     left: 50%;
     opacity: 100%;
@@ -201,7 +187,6 @@ main {
 
 .main-image-city:hover {
     filter: brightness(70%);
-    /* color: gray; */
 }
 
 .main-view_more {
@@ -209,9 +194,9 @@ main {
     color: black;
     justify-content: center;
     align-items: center;
-    margin: 2%;
-
-
+    margin-top: 05;
+    margin-bottom: 2%;
+    text-align: center;
 }
 
 .main-view_more a {
@@ -230,6 +215,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
 
 }
 
@@ -242,18 +228,15 @@ footer {
     width: 22px;
 }
 
-.footer-contact {
-    margin-left: 2%;
+.footer-copyright {
+    margin-top: 1%;
 }
-
-
 
 .btn-info {
     text-decoration: none;
     color: black;
     margin-left: 2%;
 }
-
 
 .footer-contact a {
     text-decoration: none;

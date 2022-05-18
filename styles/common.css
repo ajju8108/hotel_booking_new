@@ -1,0 +1,44 @@
+/* @media only screen and (max-width: 600px) {
+    
+  
+header{
+    z-index: 3;
+}
+
+
+.main-form input {
+    width: 50%;
+}
+
+.main-images{
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+    
+}
+
+.main-image-city {
+    margin: 2%;
+}
+.main-view_more {
+     margin-bottom: 10%;
+}
+
+footer{
+    z-index: 3;
+}
+.footer-all {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+
+.footer-copyright{
+    margin-top: 5%;
+}
+}
+@media screen and (min-width: 600px) {
+    main{
+        height: 100vh;
+    }
+  } */

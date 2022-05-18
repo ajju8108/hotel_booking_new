@@ -78,6 +78,7 @@ header {
     position: sticky;
     top: 0px;
     bottom: 0px;
+    z-index: 3;
 }
 
 header img {
@@ -98,6 +99,7 @@ main{
     flex-direction: column;
 }
 
+
 .modal-body{
     display: flex;
     justify-content: center;
@@ -105,6 +107,16 @@ main{
     padding: 2%;
   
   }
+
+  .carousel-inner button{ 
+    z-index: 2;
+  } 
+
+.carousel {
+    width:600px;
+    height:350px;
+  }
+
   .index_label2{
     margin-top: 6%;
     margin-left: 1%; 
@@ -155,6 +167,10 @@ main{
     margin: 10%;
 
 }
+
+.checked {
+    color: orange;
+  }
 .main-form-content button{
     background-color: transparent;
     color: green;
