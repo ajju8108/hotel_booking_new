@@ -65,56 +65,12 @@ body {
 }
 
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rosybrown;
-    position: sticky;
-    top: 0px;
-    bottom: 0px;
-}
 
-header img{
-    margin-left: 20%;
-}
-.btn-light {
-    align-items: center;
-    margin-right: 20px;
-    color: black;
-    background-color: white;
-    outline-offset: 0;
-    border: none;
-}
 main{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     background-color: #e0e0e0;
-}
-
-.modal-body{
-    display: flex;
-    justify-content: center;
-    /* align-items: center; */
-    padding: 2%;
-
-}
-.index_label2{
-    margin-top: 6%;
-    margin-left: 1%; 
-
-}
-.modal-footer{
-    display: flex;
-    justify-content: center;
-}
-
-.modal-footer2{
-    display: flex;
-    justify-content: flex-end;
-    margin: 0% 2% 2%;
-    /* align-items: center; */
 }
 
 #pills-tab {
@@ -201,43 +157,7 @@ main{
     color:black ;
 }
 
-footer {
-    background-color: rosybrown;
-    position: sticky;
-    top: 0px;
-    bottom: 0px;
-}
 
-.footer-all{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-}
-
-.footer-social{
-    margin: 1%;
-}
-
-.footer-social img{
-    height: 20px; 
-    width: 22px;
-}
-
-.btn-info {
-    text-decoration: none;
-    color: black;
-    margin-left: 2%;
-}
-
-.footer-contact a{
-    text-decoration: none;
-    color: black;
-}
-
-.footer-copyright {
-    font-size: 10px;
-}
 
 @media only screen and (max-width: 600px) {
     main{

@@ -13,6 +13,7 @@
     <title>Index</title>
 
     <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/common.css">
     <!-- <link rel="stylesheet" href="styles/common.css" /> -->
 </head>
 <!-- <body style="background-color: #e0e0e0;"> -->
@@ -20,10 +21,9 @@
 
 <body>
     <div class="body2">
-        <header>
-            <img src="assests/images/logo.png" height="60px" width="60px" alt="">
-            <button type="button" class="btn btn-light" data-bs-toggle="modal"
-                data-bs-target="#exampleModal1">LOGIN</button>
+        
+        <header id="header">
+            
         </header>
         <main>
             <div class="main-form">
@@ -66,7 +66,7 @@
 
             <!-- second div for 4 images -->
 
-            <div class="main-images2">
+            <div id="div2" class="main-images2" style="display: none;">
                 <div class="main-image-city">
                     <a href="list.html"><img class="black-img"
                             src="https://media-cdn.tripadvisor.com/media/photo-s/15/4d/46/b8/chennai-madras.jpg" alt="">
@@ -102,8 +102,8 @@
             <!-- end of swcond div -->
             
 
-            <div class="main-view_more">
-                <a id="view" href="index.html"><button type="button" class="btn btn-secondary">View More</button></a>
+            <div  class="main-view_more">
+                <button id="viewmore" onclick="show()" class="btn btn-secondary">View More</button></a>
             </div>
 
              <!-- Bootstrap LOGIN START-->
@@ -111,25 +111,25 @@
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Please Login</h5>
+                  <h5 class="modal-title" id="exampleModalLabel" onclick="chekvalue()">Please Login</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                   <form action="index.html" method="get" target="_self">
                     <div class="all1">
                     <div class="index_content1">
-                    <label class="index_label1" for="name">Username:</label>
-                    <input class="index_input1" type="text" name="Username" placeholder="Enter Username" autocomplete="on" required/><br></div></div>
+                    <label class="index_label1" for="name" id="username">Username:</label>
+                    <input class="index_input1" type="text" name="Username" placeholder="Enter Username" autocomplete="off" id='Username' required/><br></div></div>
                     <div class="index_content2">
-                    <label class="index_label2" for="password">Password:</label>
-                    <input class="index_input2" type="password" name="password" placeholder="Enter Password" autocomplete="off"  
+                    <label class="index_label2" for="password" id="password">Password:</label>
+                    <input class="index_input2" type="password" name="password" placeholder="Enter Password" autocomplete="off" id="password" 
                     required /><br></div>
                     
                 </form>
                 </div>
                 
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-primary">Login</button>
+                  <button type="button" class="btn btn-primary" id="login">Login</button>
                 </div>
               </div>
             </div>
@@ -167,30 +167,18 @@
 
         </main>
 
-        <footer>
-            <div class="footer-all">
-                
-                <button type="button" class="btn btn-info" data-bs-toggle="modal"
-                    data-bs-target="#exampleModal2">Contact Us</button>
-
-                <div class="footer-social" style="order: 3;">
-                    <a href="https://www.facebook.com/"><img src="assests/images/facebook.png" alt=""></a>
-                    <a href="https://www.instagram.com/accounts/login/"><img src="assests/images/instagram.png"
-                            alt=""></a>
-                    <a href="https://twitter.com/i/flow/login"><img src="assests/images/twitter.png" alt=""></a>
-                </div>
-
-                <div class="footer-copyright" style="order: 2;" >
-                    <p style="order: 2;">&copy;2020 ROOM SEARCH PVT LTD</p>
-                </div>
-
-            </div>
+        <footer id="footer">
+            
         </footer>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+        <!-- header & footer -->
+        <script src="scripts/common.js"></script>
+        <script src="scripts/index.js"></script>
+        <!--  -->
 </body>
 
 </html>
