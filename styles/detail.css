@@ -68,7 +68,10 @@
 body {
     background-color: #e0e0e0;
 }
-
+#header img{
+    height: 60px;
+    width: 60px;
+}
 
 header {
     display: flex;

@@ -140,34 +140,31 @@
     <!-- Bootstrap LOGIN START-->
     <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Please Login</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form action="index.html" method="get" target="_self">
-                        <div class="all1">
-                            <div class="index_content1">
-                                <label class="index_label1" for="name">Username:</label>
-                                <input class="index_input1" type="text" name="Username" placeholder="Enter Username"
-                                    autocomplete="on" required /><br>
-                            </div>
-                        </div>
-                        <div class="index_content2">
-                            <label class="index_label2" for="password">Password:</label>
-                            <input class="index_input2" type="password" name="password" placeholder="Enter Password"
-                                autocomplete="off" required /><br>
-                        </div>
-
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary">Login</button>
-                </div>
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel" >Please Login</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" ></button>
+              
             </div>
+            <div class="modal-body">
+              <form action="submit" method="get" target="_self">
+                <div class="all1">
+                <div class="index_content1">
+                <label class="index_label1" for="name">Username:</label>
+                <input class="index_input1" type="text" name="Username" placeholder="Enter Username" autocomplete="off" id='username' required/><br></div></div>
+                <div class="index_content2">
+                <label class="index_label2" for="password">Password:</label>
+                <input class="index_input2" type="password" name="password" placeholder="Enter Password" autocomplete="off" id='modalpassword' required /><br></div>
+                
+            </form>
+            </div>
+            
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" id="login" onclick="loginModal()">Login</button>
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
     <!-- Bootstrap  LOGIN ENDS-->
 
     <!-- Bootstrap CONTACT START-->

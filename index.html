@@ -111,25 +111,25 @@
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel" onclick="chekvalue()">Please Login</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <h5 class="modal-title" id="exampleModalLabel" >Please Login</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" ></button>
+                  
                 </div>
                 <div class="modal-body">
-                  <form action="index.html" method="get" target="_self">
+                  <form action="submit" method="get" target="_self">
                     <div class="all1">
                     <div class="index_content1">
-                    <label class="index_label1" for="name" id="username">Username:</label>
-                    <input class="index_input1" type="text" name="Username" placeholder="Enter Username" autocomplete="off" id='Username' required/><br></div></div>
+                    <label class="index_label1" for="name">Username:</label>
+                    <input class="index_input1" type="text" name="Username" placeholder="Enter Username" autocomplete="off" id='username' required/><br></div></div>
                     <div class="index_content2">
-                    <label class="index_label2" for="password" id="password">Password:</label>
-                    <input class="index_input2" type="password" name="password" placeholder="Enter Password" autocomplete="off" id="password" 
-                    required /><br></div>
+                    <label class="index_label2" for="password">Password:</label>
+                    <input class="index_input2" type="password" name="password" placeholder="Enter Password" autocomplete="off" id='modalpassword' required /><br></div>
                     
                 </form>
                 </div>
                 
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-primary" id="login">Login</button>
+                  <button type="button" class="btn btn-primary" id="login" onclick="loginModal()">Login</button>
                 </div>
               </div>
             </div>

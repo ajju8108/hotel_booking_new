@@ -85,7 +85,10 @@ header img{
   outline-offset: 0;
   border: none;
 }
-
+#header img{
+  height: 60px;
+  width: 60px;
+}
 
 main{
     display: flex;

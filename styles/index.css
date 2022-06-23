@@ -72,7 +72,10 @@ body {
     /* min-height: calc(100vh -60px - 44.48px) ; */
 }
 
-
+#header img{
+    height: 60px;
+    width: 60px;
+}
 
 .main-form {
     display: flex;

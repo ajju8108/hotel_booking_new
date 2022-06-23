@@ -64,7 +64,10 @@ body {
     height: 100vh;
 }
 
-
+#header img{
+    height: 60px;
+    width: 60px;
+}
 
 main{
     display: flex;
